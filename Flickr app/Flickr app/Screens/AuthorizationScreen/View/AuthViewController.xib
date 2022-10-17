@@ -3,6 +3,7 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -10,6 +11,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AuthViewController" customModule="Flickr_app" customModuleProvider="target">
             <connections>
+                <outlet property="confirmButton" destination="S3x-b5-mPr" id="Ffx-Az-Vpr"/>
+                <outlet property="credentialsTextField" destination="Gz4-oC-YBE" id="eEG-8R-Ojw"/>
+                <outlet property="passwordTextField" destination="8Xf-st-km5" id="IEu-BQ-7s4"/>
+                <outlet property="segmentedControl" destination="Yhh-3q-fQv" id="yVc-pr-lfa"/>
+                <outlet property="titleLabel" destination="nqg-Jo-Ivu" id="JlM-wM-Oqm"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,31 +24,35 @@
             <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqg-Jo-Ivu" userLabel="Log In">
-                    <rect key="frame" x="143" y="181.66666666666666" width="104.33333333333331" height="48"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqg-Jo-Ivu">
+                    <rect key="frame" x="137" y="181.66666666666666" width="116" height="48"/>
                     <fontDescription key="fontDescription" type="system" pointSize="40"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Yhh-3q-fQv" userLabel="Log In, Sign Up">
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Yhh-3q-fQv">
                     <rect key="frame" x="118" y="289.66666666666669" width="154" height="32"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="154" id="dvC-du-CWT"/>
                     </constraints>
                     <segments>
-                        <segment title="First"/>
-                        <segment title="Second"/>
+                        <segment title="Sign In"/>
+                        <segment title="Sign Up"/>
                     </segments>
+                    <color key="selectedSegmentTintColor" name="AccentColor"/>
+                    <connections>
+                        <action selector="didChangeSegment:" destination="-1" eventType="valueChanged" id="bmZ-9M-1Nf"/>
+                    </connections>
                 </segmentedControl>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ZuI-ba-oaU">
                     <rect key="frame" x="20" y="380.66666666666669" width="350" height="83"/>
                     <subviews>
-                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gz4-oC-YBE">
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gz4-oC-YBE">
                             <rect key="frame" x="0.0" y="0.0" width="350" height="34"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Xf-st-km5">
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Xf-st-km5">
                             <rect key="frame" x="0.0" y="49" width="350" height="34"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
@@ -55,7 +65,15 @@
                         <constraint firstAttribute="height" constant="48" id="DtX-Ln-kWy"/>
                     </constraints>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button">
+                        <backgroundConfiguration key="background">
+                            <color key="backgroundColor" name="AccentColor"/>
+                        </backgroundConfiguration>
+                        <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="logInButtonTapped:" destination="-1" eventType="touchUpInside" id="hUG-Hr-dy6"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
@@ -78,6 +96,9 @@
         </view>
     </objects>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
