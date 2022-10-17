@@ -2,7 +2,7 @@
 //  SearchTabViewController.swift
 //  Flickr app
 //
-//  Created by Ömer Faruk Kazar on 17.10.2022.
+//  Created by Ömer Faruk Kazar on 18.10.2022.
 //
 
 import UIKit
@@ -11,9 +11,8 @@ class SearchTabViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
 
-        view.backgroundColor = .blue
+        // Do any additional setup after loading the view.
     }
 
 
