@@ -90,4 +90,5 @@ fastlane/test_output
 iOSInjectionProject/
 
 # Google Firebase plist
-Flickr app/Flickr app/App/Plist/GoogleService-Info.plist
+#Flickr app/Flickr app/App/Plist/GoogleService-Info.plist
+#Flickr app/Flickr app/App/Plist/remote_config_defaults.plist
