@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gTV-IL-0wX" customClass="SearchCollectionViewCell" customModule="Flickr_app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="355" height="140"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pRw-BY-cHl">
+                        <rect key="frame" x="15" y="15" width="325" height="110"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Jr-98-meB">
+                                <rect key="frame" x="0.0" y="0.0" width="157.66666666666666" height="110"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="saS-Lw-eRq">
+                                <rect key="frame" x="167.66666666666663" y="0.0" width="157.33333333333337" height="110"/>
+                            </imageView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="pRw-BY-cHl" secondAttribute="bottom" constant="15" id="0Ww-fm-gAc"/>
+                <constraint firstItem="pRw-BY-cHl" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="cGg-oK-gzs"/>
+                <constraint firstItem="pRw-BY-cHl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="ddD-1A-XZ7"/>
+                <constraint firstAttribute="trailing" secondItem="pRw-BY-cHl" secondAttribute="trailing" constant="15" id="jVH-4h-Kvw"/>
+                <constraint firstItem="pRw-BY-cHl" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="mSE-Sx-uez"/>
+                <constraint firstItem="pRw-BY-cHl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="t5U-lv-17L"/>
+            </constraints>
+            <size key="customSize" width="355" height="140"/>
+            <point key="canvasLocation" x="225.38461538461539" y="52.606635071090047"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -11,6 +11,8 @@ class FeedTabViewController: UIViewController {
     
     @IBOutlet private weak var tableView: UITableView!
     
+    
+    // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,7 +24,13 @@ class FeedTabViewController: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        tabBarController?.title = self.title
+        tabBarController?.navigationItem.rightBarButtonItem?.isHidden = true
+        tabBarController?.navigationItem.hidesBackButton = true
+    }
     
+
     
 }
 

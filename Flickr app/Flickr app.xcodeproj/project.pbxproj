@@ -9,11 +9,9 @@
 /* Begin PBXBuildFile section */
 		9D4C328628FD5CB400C16582 /* FeedTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C328428FD5CB400C16582 /* FeedTabViewController.swift */; };
 		9D4C328728FD5CB400C16582 /* FeedTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D4C328528FD5CB400C16582 /* FeedTabViewController.xib */; };
-		9D4C329028FD5EA000C16582 /* SearchTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C328E28FD5EA000C16582 /* SearchTabViewController.swift */; };
-		9D4C329128FD5EA000C16582 /* SearchTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D4C328F28FD5EA000C16582 /* SearchTabViewController.xib */; };
-		9D4C329528FD5EAD00C16582 /* ProfileTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C329328FD5EAD00C16582 /* ProfileTabViewController.swift */; };
-		9D4C329628FD5EAD00C16582 /* ProfileTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D4C329428FD5EAD00C16582 /* ProfileTabViewController.xib */; };
 		9D7BFAF428FD5A1200E8663C /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7BFAF228FD5A1200E8663C /* TabBarViewController.swift */; };
+		9DAC3CAD28FE058A00F212FA /* ProfileTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAC3CAB28FE058A00F212FA /* ProfileTabViewController.swift */; };
+		9DAC3CAE28FE058A00F212FA /* ProfileTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DAC3CAC28FE058A00F212FA /* ProfileTabViewController.xib */; };
 		9DBE635228FD69F7000E9738 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBE635028FD69F7000E9738 /* FeedTableViewCell.swift */; };
 		9DBE635328FD69F7000E9738 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DBE635128FD69F7000E9738 /* FeedTableViewCell.xib */; };
 		9DCE9C7128FC7E7400689488 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCE9C7028FC7E7400689488 /* AppDelegate.swift */; };
@@ -21,17 +19,19 @@
 		9DCE9C7D28FC7E7500689488 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DCE9C7B28FC7E7500689488 /* LaunchScreen.storyboard */; };
 		9DCE9C9528FC800700689488 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCE9C9328FC800700689488 /* AuthViewController.swift */; };
 		9DCE9C9628FC800700689488 /* AuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DCE9C9428FC800700689488 /* AuthViewController.xib */; };
+		9DEA4F5B28FDF2A0001B1F29 /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEA4F5928FDF29F001B1F29 /* SearchCollectionViewCell.swift */; };
+		9DEA4F5C28FDF2A0001B1F29 /* SearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DEA4F5A28FDF2A0001B1F29 /* SearchCollectionViewCell.xib */; };
+		9DEA4F6128FE046F001B1F29 /* SearchTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEA4F5F28FE046F001B1F29 /* SearchTabViewController.swift */; };
+		9DEA4F6228FE046F001B1F29 /* SearchTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DEA4F6028FE046F001B1F29 /* SearchTabViewController.xib */; };
 		9DFE21F928FD6FA600C03ADD /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFE21F828FD6FA600C03ADD /* FeedTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9D4C328428FD5CB400C16582 /* FeedTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTabViewController.swift; sourceTree = "<group>"; };
 		9D4C328528FD5CB400C16582 /* FeedTabViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTabViewController.xib; sourceTree = "<group>"; };
-		9D4C328E28FD5EA000C16582 /* SearchTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTabViewController.swift; sourceTree = "<group>"; };
-		9D4C328F28FD5EA000C16582 /* SearchTabViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTabViewController.xib; sourceTree = "<group>"; };
-		9D4C329328FD5EAD00C16582 /* ProfileTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabViewController.swift; sourceTree = "<group>"; };
-		9D4C329428FD5EAD00C16582 /* ProfileTabViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTabViewController.xib; sourceTree = "<group>"; };
 		9D7BFAF228FD5A1200E8663C /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		9DAC3CAB28FE058A00F212FA /* ProfileTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabViewController.swift; sourceTree = "<group>"; };
+		9DAC3CAC28FE058A00F212FA /* ProfileTabViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTabViewController.xib; sourceTree = "<group>"; };
 		9DBE635028FD69F7000E9738 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		9DBE635128FD69F7000E9738 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
 		9DCE9C6D28FC7E7400689488 /* Flickr app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flickr app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +41,10 @@
 		9DCE9C7E28FC7E7500689488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DCE9C9328FC800700689488 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		9DCE9C9428FC800700689488 /* AuthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthViewController.xib; sourceTree = "<group>"; };
+		9DEA4F5928FDF29F001B1F29 /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		9DEA4F5A28FDF2A0001B1F29 /* SearchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCollectionViewCell.xib; sourceTree = "<group>"; };
+		9DEA4F5F28FE046F001B1F29 /* SearchTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTabViewController.swift; sourceTree = "<group>"; };
+		9DEA4F6028FE046F001B1F29 /* SearchTabViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTabViewController.xib; sourceTree = "<group>"; };
 		9DFE21F828FD6FA600C03ADD /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,6 +62,7 @@
 		9D4C328828FD5E6200C16582 /* SearchTabScreen */ = {
 			isa = PBXGroup;
 			children = (
+				9D9A987028FECF6500FEA1DF /* ViewModel */,
 				9D4C328B28FD5E7E00C16582 /* View */,
 				9D4C328A28FD5E7C00C16582 /* Controller */,
 			);
@@ -67,6 +72,7 @@
 		9D4C328928FD5E6A00C16582 /* ProfileTabScreen */ = {
 			isa = PBXGroup;
 			children = (
+				9D9A986F28FECF5300FEA1DF /* ViewModel */,
 				9D4C328D28FD5E8600C16582 /* View */,
 				9D4C328C28FD5E8400C16582 /* Controller */,
 			);
@@ -76,7 +82,7 @@
 		9D4C328A28FD5E7C00C16582 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				9D4C328E28FD5EA000C16582 /* SearchTabViewController.swift */,
+				9DEA4F5F28FE046F001B1F29 /* SearchTabViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -84,7 +90,8 @@
 		9D4C328B28FD5E7E00C16582 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9D4C328F28FD5EA000C16582 /* SearchTabViewController.xib */,
+				9DEA4F6028FE046F001B1F29 /* SearchTabViewController.xib */,
+				9D9A987428FECFFC00FEA1DF /* CustomCollectionViewCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -92,7 +99,7 @@
 		9D4C328C28FD5E8400C16582 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				9D4C329328FD5EAD00C16582 /* ProfileTabViewController.swift */,
+				9DAC3CAB28FE058A00F212FA /* ProfileTabViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -100,7 +107,7 @@
 		9D4C328D28FD5E8600C16582 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9D4C329428FD5EAD00C16582 /* ProfileTabViewController.xib */,
+				9DAC3CAC28FE058A00F212FA /* ProfileTabViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -108,6 +115,7 @@
 		9D7BFAEE28FD59CA00E8663C /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				9D9A987128FECF6B00FEA1DF /* ViewModel */,
 				9D7BFAF028FD59D200E8663C /* Controller */,
 				9D7BFAEF28FD59D000E8663C /* View */,
 			);
@@ -129,13 +137,72 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		9D9A986F28FECF5300FEA1DF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9D9A987028FECF6500FEA1DF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9D9A987128FECF6B00FEA1DF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9D9A987228FECF7600FEA1DF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9D9A987328FECFA200FEA1DF /* FeedTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				9DBE635128FD69F7000E9738 /* FeedTableViewCell.xib */,
+				9DBE635028FD69F7000E9738 /* FeedTableViewCell.swift */,
+			);
+			path = FeedTableViewCell;
+			sourceTree = "<group>";
+		};
+		9D9A987428FECFFC00FEA1DF /* CustomCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				9DEA4F5928FDF29F001B1F29 /* SearchCollectionViewCell.swift */,
+				9DEA4F5A28FDF2A0001B1F29 /* SearchCollectionViewCell.xib */,
+			);
+			path = CustomCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		9D9A987528FED03600FEA1DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9D9A987628FED03B00FEA1DF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		9DB9648128FD590400D9FF5A /* FeedTabScreen */ = {
 			isa = PBXGroup;
 			children = (
+				9D9A987228FECF7600FEA1DF /* ViewModel */,
 				9DB9648328FD592100D9FF5A /* Controller */,
 				9DB9648228FD591F00D9FF5A /* View */,
-				9DBE635028FD69F7000E9738 /* FeedTableViewCell.swift */,
-				9DBE635128FD69F7000E9738 /* FeedTableViewCell.xib */,
 			);
 			path = FeedTabScreen;
 			sourceTree = "<group>";
@@ -143,6 +210,7 @@
 		9DB9648228FD591F00D9FF5A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9D9A987328FECFA200FEA1DF /* FeedTableViewCell */,
 				9D4C328528FD5CB400C16582 /* FeedTabViewController.xib */,
 			);
 			path = View;
@@ -256,6 +324,8 @@
 		9DCE9C8C28FC7F0C00689488 /* AuthorizationScreen */ = {
 			isa = PBXGroup;
 			children = (
+				9D9A987628FED03B00FEA1DF /* ViewModel */,
+				9D9A987528FED03600FEA1DF /* Model */,
 				9DCE9C8E28FC7F1800689488 /* Controller */,
 				9DCE9C8D28FC7F1400689488 /* View */,
 			);
@@ -336,12 +406,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DEA4F6228FE046F001B1F29 /* SearchTabViewController.xib in Resources */,
 				9D4C328728FD5CB400C16582 /* FeedTabViewController.xib in Resources */,
 				9DCE9C7D28FC7E7500689488 /* LaunchScreen.storyboard in Resources */,
+				9DEA4F5C28FDF2A0001B1F29 /* SearchCollectionViewCell.xib in Resources */,
+				9DAC3CAE28FE058A00F212FA /* ProfileTabViewController.xib in Resources */,
 				9DBE635328FD69F7000E9738 /* FeedTableViewCell.xib in Resources */,
-				9D4C329128FD5EA000C16582 /* SearchTabViewController.xib in Resources */,
 				9DCE9C9628FC800700689488 /* AuthViewController.xib in Resources */,
-				9D4C329628FD5EAD00C16582 /* ProfileTabViewController.xib in Resources */,
 				9DCE9C7A28FC7E7500689488 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,12 +426,13 @@
 			files = (
 				9D4C328628FD5CB400C16582 /* FeedTabViewController.swift in Sources */,
 				9D7BFAF428FD5A1200E8663C /* TabBarViewController.swift in Sources */,
-				9D4C329528FD5EAD00C16582 /* ProfileTabViewController.swift in Sources */,
+				9DAC3CAD28FE058A00F212FA /* ProfileTabViewController.swift in Sources */,
 				9DFE21F928FD6FA600C03ADD /* FeedTableViewController.swift in Sources */,
 				9DCE9C9528FC800700689488 /* AuthViewController.swift in Sources */,
 				9DCE9C7128FC7E7400689488 /* AppDelegate.swift in Sources */,
 				9DBE635228FD69F7000E9738 /* FeedTableViewCell.swift in Sources */,
-				9D4C329028FD5EA000C16582 /* SearchTabViewController.swift in Sources */,
+				9DEA4F6128FE046F001B1F29 /* SearchTabViewController.swift in Sources */,
+				9DEA4F5B28FDF2A0001B1F29 /* SearchCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

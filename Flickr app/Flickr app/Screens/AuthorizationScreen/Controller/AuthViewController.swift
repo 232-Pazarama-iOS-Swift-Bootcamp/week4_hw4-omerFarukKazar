@@ -44,11 +44,16 @@ class AuthViewController: UIViewController {
     
     @IBOutlet weak var confirmButton: UIButton!
     
+    //MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.title = "Authorization"
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tabBarController?.title = "Auth"
     }
     
     // MARK: - Init
@@ -68,19 +73,10 @@ class AuthViewController: UIViewController {
     }
     
     @IBAction private func logInButtonTapped(_ sender: UIButton) {
+
         let tabBarVC = TabBarViewController()
-//        let vc1 = FeedTabViewController()
-//        let vc2 = SearchTabViewController()
-//        let vc3 = ProfileTabViewController()
-//        tabBarVC.setViewControllers([vc1, vc2, vc3], animated: true)
         tabBarVC.modalPresentationStyle = .fullScreen
-        
-        
-//        vc1.title = "Recent"
-//        vc2.title = "Search"
-//        vc3.title = "Profile"
-        
-        present(tabBarVC, animated: true)
+        self.navigationController?.pushViewController(tabBarVC, animated: true)
     }
     
 }

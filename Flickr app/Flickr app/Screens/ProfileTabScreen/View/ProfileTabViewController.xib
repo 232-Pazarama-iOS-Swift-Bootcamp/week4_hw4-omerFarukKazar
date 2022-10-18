@@ -1,22 +1,123 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileTabViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileTabViewController" customModule="Flickr_app" customModuleProvider="target">
             <connections>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="collectionView" destination="e83-3f-Yog" id="fCR-yA-CUW"/>
+                <outlet property="favoritesButton" destination="Sjs-xT-EUL" id="uwa-hk-Lhq"/>
+                <outlet property="likedPhotosButton" destination="8hp-hR-a0n" id="usJ-Bu-D9e"/>
+                <outlet property="userProfilePhoto" destination="OL5-qi-gkC" id="Ahy-7t-tZB"/>
+                <outlet property="usernameLabel" destination="wwC-rH-28z" id="ghY-1u-twD"/>
+                <outlet property="view" destination="o4T-MZ-b7n" id="411-LT-B7u"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        <view contentMode="scaleToFill" id="o4T-MZ-b7n">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OTO-Vg-84z">
+                    <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="ZHm-aU-36l">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="201"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="tvE-Ol-Bf1">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="128"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="example" translatesAutoresizingMaskIntoConstraints="NO" id="OL5-qi-gkC">
+                                            <rect key="frame" x="0.0" y="0.0" width="177.66666666666666" height="128"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwC-rH-28z">
+                                            <rect key="frame" x="212.66666666666663" y="0.0" width="177.33333333333337" height="128"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="128" id="9hg-GB-g43"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="yvI-V3-FYr">
+                                    <rect key="frame" x="0.0" y="153" width="390" height="48"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hp-hR-a0n">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="48"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="heart" catalog="system"/>
+                                            <connections>
+                                                <action selector="likedPhotosButtonTapped:" destination="-1" eventType="touchUpInside" id="Lek-Ux-JOM"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sjs-xT-EUL">
+                                            <rect key="frame" x="270" y="0.0" width="120" height="48"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="bookmark" catalog="system"/>
+                                            <connections>
+                                                <action selector="favoritesButtonTapped:" destination="-1" eventType="touchUpInside" id="AXX-vX-Wbe"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="48" id="pcV-To-psd" userLabel="height = 48"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="yvI-V3-FYr" firstAttribute="leading" secondItem="ZHm-aU-36l" secondAttribute="leading" id="5ny-vY-vfP"/>
+                                <constraint firstAttribute="trailing" secondItem="yvI-V3-FYr" secondAttribute="trailing" id="I0G-ZG-q9q"/>
+                                <constraint firstAttribute="trailing" secondItem="tvE-Ol-Bf1" secondAttribute="trailing" id="f0u-ub-NKy"/>
+                                <constraint firstItem="tvE-Ol-Bf1" firstAttribute="leading" secondItem="ZHm-aU-36l" secondAttribute="leading" id="msN-3s-gNQ"/>
+                                <constraint firstAttribute="trailing" secondItem="tvE-Ol-Bf1" secondAttribute="trailing" id="pzq-Fj-cAV"/>
+                                <constraint firstItem="tvE-Ol-Bf1" firstAttribute="leading" secondItem="ZHm-aU-36l" secondAttribute="leading" id="vBC-eW-U54"/>
+                            </constraints>
+                        </stackView>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="e83-3f-Yog">
+                            <rect key="frame" x="0.0" y="221" width="390" height="542"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="76V-E3-faI">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="BA6-Vl-AfC"/>
+                                <outlet property="delegate" destination="-1" id="jNc-JX-wAh"/>
+                            </connections>
+                        </collectionView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="e83-3f-Yog" firstAttribute="leading" secondItem="OTO-Vg-84z" secondAttribute="leading" id="EqT-Kw-ojx"/>
+                        <constraint firstAttribute="trailing" secondItem="e83-3f-Yog" secondAttribute="trailing" id="cdh-ef-cVy"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Mg2-04-6np"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Mg2-04-6np" firstAttribute="bottom" secondItem="OTO-Vg-84z" secondAttribute="bottom" id="3hl-pX-5Zb"/>
+                <constraint firstItem="OTO-Vg-84z" firstAttribute="leading" secondItem="Mg2-04-6np" secondAttribute="leading" id="Xmx-JY-pXa"/>
+                <constraint firstItem="OTO-Vg-84z" firstAttribute="top" secondItem="Mg2-04-6np" secondAttribute="top" id="bpw-Az-A95"/>
+                <constraint firstItem="OTO-Vg-84z" firstAttribute="trailing" secondItem="Mg2-04-6np" secondAttribute="trailing" id="vvQ-LD-lGh"/>
+            </constraints>
+            <point key="canvasLocation" x="656.92307692307691" y="-566.58767772511851"/>
         </view>
     </objects>
+    <resources>
+        <image name="bookmark" catalog="system" width="110" height="128"/>
+        <image name="example" width="4764" height="3176"/>
+        <image name="heart" catalog="system" width="128" height="107"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
