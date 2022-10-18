@@ -25,7 +25,7 @@ class SearchTabViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         tabBarController?.title = self.title
-        tabBarController?.navigationItem.rightBarButtonItem?.isHidden = true
+        tabBarController?.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
         tabBarController?.navigationItem.hidesBackButton = true
     }
     
