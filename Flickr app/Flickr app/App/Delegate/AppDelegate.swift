@@ -6,6 +6,10 @@
 //
 
 import UIKit
+import FirebaseCore
+import FirebaseFirestore
+import FirebaseAuth
+import FirebaseRemoteConfig
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,14 +20,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         setupWindow()
+        setupFirebase()
         
         return true
+    }
+    
+    private func setupFirebase() {
+        FirebaseApp.configure()
+        
+        _ = Firestore.firestore()
     }
 
     private func setupWindow() {
         let window = UIWindow(frame: UIScreen.main.bounds)
 //        let viewModel = AuthViewModel()
-        let viewController = AuthViewController()
+        let viewModel = AuthViewModel()
+        let viewController = AuthViewController(viewModel: viewModel)
         let navigationController = UINavigationController(rootViewController: viewController)
         window.rootViewController = navigationController
         window.makeKeyAndVisible()

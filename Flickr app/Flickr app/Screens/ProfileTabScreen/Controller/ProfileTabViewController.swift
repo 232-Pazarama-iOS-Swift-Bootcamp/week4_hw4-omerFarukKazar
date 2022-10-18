@@ -49,9 +49,14 @@ final class ProfileTabViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         tabBarController?.title = self.title
-        tabBarController?.navigationItem.hidesBackButton = true
+//        tabBarController?.navigationItem.hidesBackButton = true
         tabBarController?.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Sign Out", style: .plain, target: self, action: #selector(signOutTapped))
         
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        tabBarController?.navigationItem.rightBarButtonItem = nil
+
     }
     
 
