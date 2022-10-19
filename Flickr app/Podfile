@@ -12,4 +12,6 @@ target 'Flickr app' do
   pod 'Firebase/Firestore'
   pod 'Firebase/Storage'
   pod 'FirebaseRemoteConfig'
+  pod 'Kingfisher'
+
 end

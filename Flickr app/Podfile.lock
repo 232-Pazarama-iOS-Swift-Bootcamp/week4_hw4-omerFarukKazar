@@ -731,6 +731,7 @@ PODS:
   - gRPC-Core/Interface (1.44.0)
   - GTMSessionFetcher/Core (2.1.0)
   - IQKeyboardManager (6.5.10)
+  - Kingfisher (7.4.0)
   - leveldb-library (1.22.1)
   - Libuv-gRPC (0.0.10):
     - Libuv-gRPC/Implementation (= 0.0.10)
@@ -755,6 +756,7 @@ DEPENDENCIES:
   - Firebase/Storage
   - FirebaseRemoteConfig
   - IQKeyboardManager
+  - Kingfisher
   - Moya
 
 SPEC REPOS:
@@ -779,6 +781,7 @@ SPEC REPOS:
     - gRPC-Core
     - GTMSessionFetcher
     - IQKeyboardManager
+    - Kingfisher
     - leveldb-library
     - Libuv-gRPC
     - Moya
@@ -806,12 +809,13 @@ SPEC CHECKSUMS:
   gRPC-Core: 943e491cb0d45598b0b0eb9e910c88080369290b
   GTMSessionFetcher: ffbb25ec00ebcb5201adab0a56d808f6f1902d9f
   IQKeyboardManager: 45a1fa55c1a5b02c61ac0fd7fd5b62bb4ad20d97
+  Kingfisher: 596b207973051aae5e4c54a1c1cb39837ea10d36
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
   Libuv-gRPC: 55e51798e14ef436ad9bc45d12d43b77b49df378
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
   PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
 
-PODFILE CHECKSUM: 70d7a2cf2c7f9ec6080d4c33bed890d2277c0444
+PODFILE CHECKSUM: 72ff7a0ba3dc1f951a6dc1834b1382f5e7a362fe
 
 COCOAPODS: 1.11.3

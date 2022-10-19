@@ -13,7 +13,7 @@ final class TabBarViewController: UITabBarController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let vc1 = FeedTabViewController()
+        let vc1 = FeedTabViewController(viewModel: FeedTableViewModel())
         let vc2 = SearchTabViewController()
         let vc3 = ProfileTabViewController()
         
