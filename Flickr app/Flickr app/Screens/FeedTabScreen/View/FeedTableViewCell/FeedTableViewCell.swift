@@ -10,8 +10,8 @@ import UIKit
 final class FeedTableViewCell: UITableViewCell {
 
     
-    @IBOutlet private weak var profilePhotoImageView: UIImageView!
-    @IBOutlet private weak var usernameLabel: UILabel!
+    @IBOutlet weak var profilePhotoImageView: UIImageView!
+    @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var likeButton: UIButton!
     @IBOutlet weak var addToFavoritesButton: UIButton!

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		97CFB09B0F1871BEC9A31B7C /* Pods_Flickr_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7541E7DF7C3E35347D18399 /* Pods_Flickr_app.framework */; };
+		9D0F7ED728FF671A00699310 /* FlickrAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0F7ED628FF671A00699310 /* FlickrAPI.swift */; };
+		9D0F7ED928FF682B00699310 /* CoinstatsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0F7ED828FF682B00699310 /* CoinstatsAPI.swift */; };
 		9D4871AC28FF4D2F0016E0D4 /* Encodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4871AB28FF4D2F0016E0D4 /* Encodable+Extension.swift */; };
 		9D4871AE28FF4F840016E0D4 /* UserDefaultsAccessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4871AD28FF4F840016E0D4 /* UserDefaultsAccessible.swift */; };
 		9D4871B028FF4F9E0016E0D4 /* FireBaseFireStoreAccessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4871AF28FF4F9E0016E0D4 /* FireBaseFireStoreAccessible.swift */; };
@@ -19,6 +21,10 @@
 		9D54F16628FEF62600389D65 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D54F16528FEF62600389D65 /* AuthViewModel.swift */; };
 		9D54F16828FF2D3700389D65 /* remote_config_defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D54F16728FF2D3700389D65 /* remote_config_defaults.plist */; };
 		9D7BFAF428FD5A1200E8663C /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7BFAF228FD5A1200E8663C /* TabBarViewController.swift */; };
+		9D97DB922900049000C7636B /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D97DB912900049000C7636B /* Photo.swift */; };
+		9D97DB94290008BD00C7636B /* PhotosResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D97DB93290008BD00C7636B /* PhotosResponse.swift */; };
+		9D97DB9629000A2400C7636B /* FeedTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D97DB9529000A2400C7636B /* FeedTableViewModel.swift */; };
+		9D97DB9829000AEF00C7636B /* FAViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D97DB9729000AEF00C7636B /* FAViewModel.swift */; };
 		9D9A987B28FEE73800FEA1DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D9A987A28FEE73800FEA1DF /* GoogleService-Info.plist */; };
 		9DAC3CAD28FE058A00F212FA /* ProfileTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAC3CAB28FE058A00F212FA /* ProfileTabViewController.swift */; };
 		9DAC3CAE28FE058A00F212FA /* ProfileTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DAC3CAC28FE058A00F212FA /* ProfileTabViewController.xib */; };
@@ -38,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		59A4390C9F56EB637D586783 /* Pods-Flickr app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flickr app.debug.xcconfig"; path = "Target Support Files/Pods-Flickr app/Pods-Flickr app.debug.xcconfig"; sourceTree = "<group>"; };
+		9D0F7ED628FF671A00699310 /* FlickrAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrAPI.swift; sourceTree = "<group>"; };
+		9D0F7ED828FF682B00699310 /* CoinstatsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinstatsAPI.swift; sourceTree = "<group>"; };
 		9D4871AB28FF4D2F0016E0D4 /* Encodable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extension.swift"; sourceTree = "<group>"; };
 		9D4871AD28FF4F840016E0D4 /* UserDefaultsAccessible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsAccessible.swift; sourceTree = "<group>"; };
 		9D4871AF28FF4F9E0016E0D4 /* FireBaseFireStoreAccessible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseFireStoreAccessible.swift; sourceTree = "<group>"; };
@@ -49,6 +57,10 @@
 		9D54F16528FEF62600389D65 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		9D54F16728FF2D3700389D65 /* remote_config_defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = remote_config_defaults.plist; sourceTree = "<group>"; };
 		9D7BFAF228FD5A1200E8663C /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		9D97DB912900049000C7636B /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		9D97DB93290008BD00C7636B /* PhotosResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosResponse.swift; sourceTree = "<group>"; };
+		9D97DB9529000A2400C7636B /* FeedTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewModel.swift; sourceTree = "<group>"; };
+		9D97DB9729000AEF00C7636B /* FAViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAViewModel.swift; sourceTree = "<group>"; };
 		9D9A987A28FEE73800FEA1DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9DAC3CAB28FE058A00F212FA /* ProfileTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabViewController.swift; sourceTree = "<group>"; };
 		9DAC3CAC28FE058A00F212FA /* ProfileTabViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTabViewController.xib; sourceTree = "<group>"; };
@@ -121,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				9D4871B528FF544B0016E0D4 /* FAViewController.swift */,
+				9D97DB9729000AEF00C7636B /* FAViewModel.swift */,
 			);
 			path = FAKit;
 			sourceTree = "<group>";
@@ -203,6 +216,15 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		9D97DB902900022C00C7636B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9D97DB912900049000C7636B /* Photo.swift */,
+				9D97DB93290008BD00C7636B /* PhotosResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		9D9A986F28FECF5300FEA1DF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,6 +249,7 @@
 		9D9A987228FECF7600FEA1DF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				9D97DB9529000A2400C7636B /* FeedTableViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -268,6 +291,7 @@
 		9DB9648128FD590400D9FF5A /* FeedTabScreen */ = {
 			isa = PBXGroup;
 			children = (
+				9D97DB902900022C00C7636B /* Model */,
 				9D9A987228FECF7600FEA1DF /* ViewModel */,
 				9DB9648328FD592100D9FF5A /* Controller */,
 				9DB9648228FD591F00D9FF5A /* View */,
@@ -384,6 +408,8 @@
 		9DCE9C8A28FC7E9500689488 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				9D0F7ED628FF671A00699310 /* FlickrAPI.swift */,
+				9D0F7ED828FF682B00699310 /* CoinstatsAPI.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -546,21 +572,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D4C328628FD5CB400C16582 /* FeedTabViewController.swift in Sources */,
+				9D97DB9829000AEF00C7636B /* FAViewModel.swift in Sources */,
 				9D7BFAF428FD5A1200E8663C /* TabBarViewController.swift in Sources */,
 				9D4871B028FF4F9E0016E0D4 /* FireBaseFireStoreAccessible.swift in Sources */,
 				9D4871AE28FF4F840016E0D4 /* UserDefaultsAccessible.swift in Sources */,
 				9DAC3CAD28FE058A00F212FA /* ProfileTabViewController.swift in Sources */,
+				9D0F7ED728FF671A00699310 /* FlickrAPI.swift in Sources */,
 				9DFE21F928FD6FA600C03ADD /* FeedTableViewController.swift in Sources */,
+				9D0F7ED928FF682B00699310 /* CoinstatsAPI.swift in Sources */,
 				9DCE9C9528FC800700689488 /* AuthViewController.swift in Sources */,
 				9D4871B628FF544B0016E0D4 /* FAViewController.swift in Sources */,
 				9D4871B328FF50500016E0D4 /* AlertPresentable.swift in Sources */,
 				9D4871AC28FF4D2F0016E0D4 /* Encodable+Extension.swift in Sources */,
+				9D97DB922900049000C7636B /* Photo.swift in Sources */,
 				9DCE9C7128FC7E7400689488 /* AppDelegate.swift in Sources */,
 				9DBE635228FD69F7000E9738 /* FeedTableViewCell.swift in Sources */,
 				9D54F16628FEF62600389D65 /* AuthViewModel.swift in Sources */,
+				9D97DB9629000A2400C7636B /* FeedTableViewModel.swift in Sources */,
 				9DEA4F6128FE046F001B1F29 /* SearchTabViewController.swift in Sources */,
 				9D54F16428FEF36A00389D65 /* User.swift in Sources */,
 				9DEA4F5B28FDF2A0001B1F29 /* SearchCollectionViewCell.swift in Sources */,
+				9D97DB94290008BD00C7636B /* PhotosResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
